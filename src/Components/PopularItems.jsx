@@ -42,7 +42,7 @@ const PopularItems = () => {
                 </div>
               </div>
             </Col>
-            <Col sm={6} lg={4} xxl={3}>
+            <Col className="mt-4 mt-sm-0" sm={6} lg={4} xxl={3}>
               <div className="item_card">
                 <a href="#">
                   <img className="w-100" src={item_2} alt="item_2" />

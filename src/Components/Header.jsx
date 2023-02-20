@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Navbar from "./Navbar";
 import hero_panda from "../assets/image/png/hero_panda.png";
+import panda_gif from "../assets/image/png/panda_gif.gif";
 const Header = () => {
   return (
     <>
@@ -34,6 +35,11 @@ const Header = () => {
                   alt="panda"
                 />
                 <span className="box_1 position-absolute end-0"></span>
+                <img
+                  className="position-absolute gif"
+                  src={panda_gif}
+                  alt="panda_gif"
+                />
               </Col>
             </Row>
           </Container>

@@ -11,9 +11,10 @@ import Bulk_Orders from "../assets/image/png/Bulk_Orders.png";
 const Shop = () => {
   return (
     <>
-      <section className="bg_dark_blue">
+      <section className="bg_dark_blue position-relative">
+        <span className="blue_sec position-absolute bottom-0 start-0"></span>
         <Container className="py-5">
-          <div className="d-flex justify-content-between gap-4 overflow_scroll">
+          <div className="d-flex justify-content-between gap-4 overflow_scroll z_index2">
             <div className="custom_w d-flex flex-column align-items-center">
               <img className="shop_img" src={Mushrooms} alt="Mushrooms" />
               <h4 className="ff_Philosopher fw-bold fs_xl text-white text-center m-0 pt-2">

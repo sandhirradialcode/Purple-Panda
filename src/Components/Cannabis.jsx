@@ -39,7 +39,7 @@ const Cannabis = () => {
                   <h4 className="ff_Montserrat fw-semibold fs_xl text-white m-0">
                     Indica:
                   </h4>
-                  <p className="ff_Montserrat fw-normal fs_md text-white m-0 text-center text-md-start ps-3 pe-lg-4 pe-xl-5">
+                  <p className="ff_Montserrat fw-normal fs_md text-white m-0 ps-3 pe-lg-4 pe-xl-5">
                     These are your bedtime buds, great for relaxing at the end
                     of the day and for treating stress and anxiety.
                   </p>
@@ -48,7 +48,7 @@ const Cannabis = () => {
                   <h4 className="ff_Montserrat fw-semibold fs_xl text-white m-0">
                     Sativa:
                   </h4>
-                  <p className="ff_Montserrat fw-normal fs_md text-white m-0 text-center text-md-start ps-3 pe-lg-4 pe-xl-5">
+                  <p className="ff_Montserrat fw-normal fs_md text-white m-0  ps-3 pe-lg-4 pe-xl-5">
                     Smoke up some Sativa for a boost of energy and creativity,
                     perfect for a sunny summer’s day with friends!
                   </p>
@@ -57,7 +57,7 @@ const Cannabis = () => {
                   <h4 className="ff_Montserrat fw-semibold fs_xl text-white m-0">
                     Hybrid:
                   </h4>
-                  <p className="ff_Montserrat fw-normal fs_md text-white m-0 text-center text-md-start ps-3 pe-lg-4 pe-xl-5">
+                  <p className="ff_Montserrat fw-normal fs_md text-white m-0 ps-3 pe-lg-4 pe-xl-5">
                     Get the best of both worlds with our Hybrid range, bringing
                     together the sensations and flavors of Indica and Sativa for
                     something totally unique.

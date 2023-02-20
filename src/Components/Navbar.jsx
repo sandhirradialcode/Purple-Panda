@@ -15,7 +15,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav className="top_nav py-2 d-none d-md-flex">
+      <nav className="top_nav py-3 d-none d-md-flex">
         <Container>
           <div className="d-flex justify-content-center align-items-center">
             <a href="#" className="d-inline-block">
@@ -151,7 +151,7 @@ const Navbar = () => {
               </a>
             </li>
             <li onClick={() => setopenNav(true)}>
-              <form class="search_input">
+              <form class="search_input d-flex">
                 <input type="text" name="search" placeholder="Search here.." />
                 <button type="submit" class="btn btn_search"></button>
               </form>

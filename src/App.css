@@ -267,6 +267,12 @@
   z-index: 5;
   position: relative;
 }
+.gif {
+  top: 20%;
+  right: 31%;
+  width: 164px;
+  height: 240px;
+}
 /*----Shop------*/
 body {
   background-color: #07031d !important;
@@ -598,12 +604,57 @@ body {
   height: 210px;
   border-radius: 50%;
 }
+/*------Contact-------*/
+.bg_contact {
+  background-image: url(./assets/image/png/canada_mail_bg_img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact_us_box {
+  background: rgba(22, 15, 47, 0.5);
+  border: 1px solid #411a68;
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  padding: 30px 20px 40px 20px;
+}
+.input_group input {
+  width: 100%;
+  background: rgba(22, 15, 47, 0.5);
+  border: 1px solid #411a68;
+  backdrop-filter: blur(9px);
+  border-radius: 4px;
+  font-family: var(--ff-Montserrat);
+  font-weight: 400;
+  font-size: var(--fs-md);
+  line-height: 20px;
+  color: #fff;
+  padding: 10px 15px;
+  outline: none;
+}
+.message_input {
+  height: 107px;
+}
+.message_input ::placeholder {
+  text-align: start !important;
+  font-family: var(--ff-Montserrat) !important;
+  font-weight: 400 !important;
+  font-size: var(--fs-xsm) !important;
+  text-align: start !important;
+  padding: 0px !important;
+}
+.z_index2 {
+  z-index: 2;
+  position: relative;
+}
+
 @media (max-width: 576px) {
   :root {
     --fs-xsm: 12px;
     --fs-sm: 14px;
     --fs-md: 13px;
-    --fs-lg: 15px;
+    --fs-lg: 12px;
     --fs-xl: 15px;
     --fs-xxl: 32px;
     --fs-3xl: 35px;
@@ -622,17 +673,31 @@ body {
   .custom_w {
     width: 30%;
   }
+  .gif {
+    top: 20%;
+    right: 68%;
+    width: 104px;
+    height: 100px;
+  }
   /*------AboutUs-------*/
   .box_2 {
     padding: 20px 20px;
   }
   .box_2::after {
     height: 90%;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
   }
   /*-----OurRange------*/
   .range_box {
     padding: 40px 30px;
+  }
+  .box_3 {
+    padding: 57px 40px;
+  }
+  .box_3::after {
+    height: 90%;
+    bottom: 0%;
+    margin-bottom: 9%;
   }
   /*-----CannabisDelivery------*/
   .CanDelivery_box {
@@ -662,6 +727,9 @@ body {
     object-fit: cover;
     width: 100%;
   }
+  .classification_box {
+    padding: 20px;
+  }
 }
 @media (min-width: 576px) {
   :root {
@@ -686,6 +754,12 @@ body {
     width: 100%;
     height: 120px;
     top: 54%;
+  }
+  .gif {
+    top: 15%;
+    right: 67%;
+    width: 154px;
+    height: 200px;
   }
   /*------AboutUs-------*/
   .box_2 {
@@ -734,6 +808,11 @@ body {
   .box_2 {
     padding: 8px 16px;
   }
+  .box_3::after {
+    height: 90%;
+    bottom: 0%;
+    margin-bottom: 5%;
+  }
   /*-----OurRange------*/
   .range_box {
     padding: 50px 80px;
@@ -763,6 +842,12 @@ body {
     left: 15%;
     width: 70%;
   }
+  .gif {
+    top: 25%;
+    right: 31%;
+    width: 104px;
+    height: 180px;
+  }
 }
 @media (min-width: 992px) {
   .btn_search {
@@ -780,6 +865,12 @@ body {
   .shop_img {
     width: 139px;
     height: 139px;
+  }
+  .gif {
+    top: 25%;
+    right: 33%;
+    width: 144px;
+    height: 210px;
   }
   /*------AboutUs-------*/
   .box_2 {
@@ -800,6 +891,11 @@ body {
   }
   .CanDelivery_box {
     padding: 30px 35px;
+  }
+  .box_3::after {
+    height: 90%;
+    bottom: 0%;
+    margin-bottom: 3%;
   }
   /*-----GreateTorontoArea------*/
   .toron_left {
@@ -857,6 +953,12 @@ body {
     height: 300px;
     top: 60% !important;
   }
+  .gif {
+    top: 28%;
+    right: 31%;
+    width: 164px;
+    height: 200px;
+  }
   /*------AboutUs-------*/
   .box_2::after {
     height: 90%;
@@ -888,10 +990,19 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .min_60vh {
+    min-height: 60vh;
+  }
 }
 @media (min-width: 1400px) {
   .range_box {
     padding: 64px 300px;
+  }
+  .gif {
+    top: 20%;
+    right: 31%;
+    width: 164px;
+    height: 240px;
   }
   /*-----CannabisDelivery------*/
   .CanDelivery_box::after {

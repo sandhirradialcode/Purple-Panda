@@ -5,7 +5,8 @@ import cannabis_leaves from "../assets/image/png/cannabis_leaves.png";
 const CannabisDelivery = () => {
   return (
     <>
-      <section>
+      <section className=" position-relative">
+        <span className="blue_sec position-absolute top-0 end-0"></span>
         <Container className="py-5">
           <Row className=" align-items-center">
             <Col md={7}>
