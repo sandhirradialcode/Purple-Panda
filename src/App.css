@@ -1,38 +1,918 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Original+Surfer&family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/ondined?styles=95047");
+
+:root {
+  /*--font-family--*/
+  --ff-Montserrat: "Montserrat";
+  --ff-Philosopher: "Philosopher";
+  --ff-Original-S: "Original Surfer";
+  --ff-OndineD: "OndineD";
+  /*----font-size-----*/
+  --fs-xsm: 12px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 20px;
+  --fs-xl: 24px;
+  --fs-xxl: 32px;
+  --fs-3xl: 35px;
+  --fs-4xl: 48px;
+  --fs-5xl: 80px;
+  /*-----color------*/
+  --clr-purple: #a020f0;
+}
+/*----font-family----*/
+.ff_Montserrat {
+  font-family: var(--ff-Montserrat);
+}
+.ff_Philosopher {
+  font-family: var(--ff-Philosopher);
+}
+.ff_Original_S {
+  font-family: var(--ff-Original-S);
+}
+.ff_OndineD {
+  font-family: var(--ff-OndineD);
+}
+/*------font-size-------*/
+.fs_xsm {
+  font-size: var(--fs-xsm);
+}
+.fs_sm {
+  font-size: var(--fs-sm);
+}
+.fs_md {
+  font-size: var(--fs-md);
+}
+.fs_lg {
+  font-size: var(--fs-lg);
+}
+.fs_xl {
+  font-size: var(--fs-xl);
+}
+.fs_xxl {
+  font-size: var(--fs-xxl);
+}
+.fs_3xl {
+  font-size: var(--fs-3xl);
+}
+.fs_4xl {
+  font-size: var(--fs-4xl);
+}
+.fs_5xl {
+  font-size: var(--fs-5xl);
+}
+/*-----color------*/
+.clr_gradient {
+  background: linear-gradient(126.14deg, #aa1ffe 3.66%, #dd22e6 95.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.clr_purple {
+  color: var(--clr-purple) !important;
+}
+/* opacity */
+.opacity_07 {
+  opacity: 0.7;
+}
+.opacity_08 {
+  opacity: 0.8;
+}
+/*----button----*/
+.btn_1 {
+  color: #ffffff;
+  background: linear-gradient(126.14deg, #aa1ffe 3.66%, #dd22e6 95.92%);
+  border-radius: 40px;
+  padding: 12px 35px;
+  border: transparent;
   text-align: center;
+  transition: all 400ms linear;
+}
+.btn_1:hover {
+  background: linear-gradient(126.14deg, #dd22e6 3.66%, #aa1ffe 95.92%);
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*------top-navbar------- */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top_nav {
+  background: #2f015b;
 }
-
-.App-header {
-  background-color: #282c34;
+/*-----navbar------- */
+.nav_logo {
+  z-index: 20;
+  position: relative;
+}
+.btn-close {
+  border: 3px solid #e8edfb !important;
+  padding: 3px !important;
+  top: 0%;
+}
+.nav_links {
+  transition: linear 250ms;
+  position: relative;
+}
+.nav_links::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  bottom: -30%;
+  right: -8%;
+  border-radius: 0 0 2px 2px;
+  background: linear-gradient(126.14deg, #aa1ffe 3.66%, #dd22e6 95.92%);
+  width: 0;
+  transition: ease-out 300ms;
+}
+.nav_links:hover::after {
+  width: 116%;
+}
+.showNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  opacity: 0 !important;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: white;
+  pointer-events: none;
+  transition: linear 300ms;
+  z-index: 10;
+}
+.hideNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1 !important;
+  min-height: 100vh;
+  background-color: #0d0d2b;
+  pointer-events: all;
+  transition: linear 300ms;
+  z-index: 10;
+}
+.menu_btn {
+  width: 40px;
+  height: 28px;
+  border: 2px solid#2F015B;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0 5px;
+}
+.menu_line {
+  width: 100%;
+  display: inline-block;
+  border-radius: 4px;
+  height: 3px;
+  background-color: #2f015b;
+}
+
+/* Back to top */
+.back-to-top {
+  position: fixed;
+  bottom: 3%;
+  right: 20px;
+  z-index: 9999;
   color: white;
+  background-color: #f9aa4b;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  font-weight: 500;
 }
-
-.App-link {
-  color: #61dafb;
+.up-down-anim {
+  animation: up-down 5s linear infinite;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.search_input {
+  background: #212121;
+  border: 1px solid #565656 !important;
+  border-radius: 16px;
+  padding: 5px 12px;
+  outline: none;
+}
+.search_input input {
+  background: transparent;
+  font-family: var(--ff-Montserrat);
+  font-weight: 400 !important;
+  font-size: var(--fs-xsm);
+  color: white !important;
+  outline: none !important;
+  border: none;
+  width: 100%;
+}
+.search_input input::placeholder {
+  font-family: var(--ff-Montserrat) !important;
+  font-weight: 400 !important;
+  font-size: var(--fs-xsm) !important;
+  color: white !important;
+}
+.btn_search {
+  background-image: url("./assets/image/svg/ri_search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px !important;
+  height: 20px;
+  width: 20px;
+  padding-left: 10px;
+}
+/*----header-------*/
+.bg_hero {
+  background-image: url(./assets/image/png/Group\ 2.png);
+  background-position: start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #07031d;
+}
+.box_1 {
+  background: linear-gradient(
+    180deg,
+    #07031d 37.24%,
+    rgba(7, 3, 29, 0.01) 88.23%
+  );
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  width: 100%;
+  height: 300px;
+  bottom: 0%;
+}
+.hero_panda {
+  width: 100%;
+}
+.sign {
+  z-index: 5;
+  position: relative;
+}
+/*----Shop------*/
+body {
+  background-color: #07031d !important;
+}
+.shop_img {
+  width: 150px;
+  height: 150px;
+}
+.w_133 {
+  width: 133px;
+}
+.custom_w {
+  width: 20%;
+}
+.overflow_scroll {
+  overflow-x: scroll;
+}
+/*------AboutUs-------*/
+.bg_cannabis {
+  background-image: url(./assets/image/png/cannabis_plant.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box_2 {
+  background: rgba(22, 15, 47, 0.5);
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  padding: 57px 65px;
+  position: relative;
+}
+.box_2::after {
+  position: absolute;
+  content: "";
+  height: 90%;
+  bottom: 0%;
+  margin-bottom: 5%;
+  left: 0%;
+  background: linear-gradient(126.14deg, #aa1ffe 3.66%, #dd22e6 95.92%);
+  width: 4px;
+}
+.d_grid {
+  display: grid;
+  gap: 8px;
+}
+.abu_grid_img1 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.abu_grid_img2 {
+  grid-row: 1/4;
+  grid-column: 3/4;
+}
+.abu_grid_img3 {
+  grid-row: 3/5;
+  grid-column: 1/3;
+}
+.abu_grid_img4 {
+  grid-row: 4/6;
+  grid-column: 3/4;
+}
+.abu_grid_img5 {
+  grid-row: 5/7;
+  grid-column: 2/3;
+}
+/*-----OurRange------*/
+.range_box {
+  background: rgba(22, 15, 47, 0.5);
+  border: 1px solid #411a68;
+  backdrop-filter: blur(9px) !important;
+  border-radius: 10px;
+}
+.z_index_1 {
+  z-index: -1;
+}
+/*-----CannabisDelivery------*/
+.CanDelivery_box {
+  background: rgba(22, 15, 47, 0.5);
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  padding: 30px 35px;
+  position: relative;
+}
+.CanDelivery_box::after {
+  position: absolute;
+  content: "";
+  height: 91%;
+  bottom: 0%;
+  margin-bottom: 2%;
+  left: 0%;
+  background: linear-gradient(126.14deg, #aa1ffe 3.66%, #dd22e6 95.92%);
+  width: 4px;
+}
+/*-----GreateTorontoArea------*/
+.TorontoArea_box1 {
+  background: rgba(22, 15, 47, 0.5);
+  border: 1px solid #411a68;
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  padding: 70px 10px;
+  width: 100%;
+  height: 100%;
+}
+.ellipse_gradient {
+  background: linear-gradient(126.14deg, #aa1ffe 3.66%, #dd22e6 95.92%);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.toron_left {
+  left: 38%;
+  bottom: 0%;
+}
+.toron_right {
+  top: 20%;
+  right: -5%;
+}
+/*-----LowPrices------*/
+.low_prices_box {
+  background: rgba(22, 15, 47, 0.5);
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+}
+.mushroom_img {
+  transform: scale(1.1);
+  padding-right: 23px;
+}
+.mushroom_blur {
+  width: 40%;
+  height: 331px;
+  background: #9f00ff;
+  filter: blur(120px);
+  top: 15%;
+  right: 30%;
+  z-index: -1;
+  opacity: 0;
+  transition: all 400ms linear;
+}
+.mushroom_img:hover .mushroom_blur {
+  opacity: 1;
+}
+/*-----ProductDelivery-----*/
+.product_blur {
+  width: 40%;
+  height: 250px;
+  background: #9f00ff;
+  filter: blur(100px);
+  top: 20%;
+  right: 30%;
+  z-index: -1;
+  opacity: 0;
+  transition: all 400ms linear;
+}
+.chemical_img:hover .product_blur {
+  opacity: 1;
+}
+/*-----CanadaOrders------*/
+.bg_img_mailorder {
+  background-image: url(./assets/image/png/canada_mail_bg_img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card_1 {
+  background: rgba(22, 15, 47, 0.5);
+  border: 1.16879px solid #411a68;
+  backdrop-filter: blur(6.5px);
+  border-radius: 28.051px;
+  padding: 0px 45px 55px;
+}
+.white_round {
+  filter: drop-shadow(0px 6.03173px 22.619px rgba(201, 177, 255, 0.35));
+  box-shadow: 0px 6.031727313995361px 22.618980407714844px 0px #c9b1ff59;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  padding: 35px;
+  transform: translate(14%, 16%);
+}
+.dark_blue_round {
+  background-color: #15082f;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: -1;
+  transform: translateY(-50%);
+}
+.order_liner {
+  background: linear-gradient(
+    253.99deg,
+    #07031d 70.16%,
+    rgba(7, 3, 29, 0) 91.23%
+  );
+  height: 70px;
+  width: 95%;
+  top: -8%;
+}
+.card1_blur {
+  background: #9a00fb;
+  filter: blur(250px);
+  transform: rotate(0.61deg);
+  width: 290px;
+  height: 185px;
+  z-index: -1;
+}
+/*------Cannabis--------*/
+.cannabis_bg_img {
+  background-image: url(./assets/image/png/cannabis_plant_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box_3 {
+  background: rgba(22, 15, 47, 0.5);
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  padding: 57px 65px;
+  position: relative;
+}
+.box_3::after {
+  position: absolute;
+  content: "";
+  height: 90%;
+  bottom: 0%;
+  margin-bottom: 3%;
+  left: 0%;
+  background: linear-gradient(126.14deg, #aa1ffe 3.66%, #dd22e6 95.92%);
+  width: 4px;
+}
+/*-----PotentCannabis------*/
+.space_panda {
+  left: 32%;
+}
+.min_vh_space {
+  min-height: 100vh;
+  background-image: url(./assets/image/png/Group\ 35136.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*------OurClassifications-------*/
+.Classifications_bg {
+  background-image: url(./assets/image/png/Classifications_bg_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: start;
+}
+.classification_box {
+  background: rgba(22, 15, 47, 0.5);
+  border: 1px solid #411a68;
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  padding: 40px 0px 40px 60px;
+}
+.text_border {
+  content: "Our Classifications";
+  top: 0;
+  z-index: 1;
+  position: absolute;
+  color: transparent;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #411a68;
+}
+.Classifications_right {
+  top: 35%;
+  left: 32%;
+}
+/*-----PopularItems-------*/
+.popular_Items_bg {
+  background-image: url(./assets/image/png/popular_items_bg_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item_card {
+  background: rgba(22, 15, 47, 0.5);
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  padding: 11px 8px 32px 8px;
+}
+/*------LatestBlogs-------*/
+.blog_bg_img {
+  background-image: url(./assets/image/png/blog_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog_card {
+  background: rgba(22, 15, 47, 0.5);
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  padding: 10px;
+  height: 100%;
+}
+/*-------PandaImageSec--------*/
+.panda_bg {
+  background-image: url(./assets/image/png/Group\ 35208.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.panda_image {
+  border-radius: 10px;
+  background: linear-gradient(0deg, #dd22e6, #aa1ffe);
+  padding: 2px;
+}
+/*-----StoreHours-------*/
+.store_hour {
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(221, 34, 230, 0.59);
+}
+/*-----Footer-------*/
+.footer_bg {
+  background-image: url(./assets/image/png/footer_bg_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.copyright {
+  padding: 20px 0;
+  border-top: 1px solid rgba(170, 31, 254, 0.3);
+}
+.blue_sec {
+  background: #9f00ff;
+  filter: blur(134.5px);
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+}
+@media (max-width: 576px) {
+  :root {
+    --fs-xsm: 12px;
+    --fs-sm: 14px;
+    --fs-md: 13px;
+    --fs-lg: 15px;
+    --fs-xl: 15px;
+    --fs-xxl: 32px;
+    --fs-3xl: 35px;
+    --fs-4xl: 30px;
+    --fs-5xl: 40px;
+  }
+  .shop_img {
+    width: 100px;
+    height: 100px;
+  }
+  .box_1 {
+    width: 100%;
+    height: 100px;
+    top: 40%;
+  }
+  .custom_w {
+    width: 30%;
+  }
+  /*------AboutUs-------*/
+  .box_2 {
+    padding: 20px 20px;
+  }
+  .box_2::after {
+    height: 90%;
+    margin-bottom: 8%;
+  }
+  /*-----OurRange------*/
+  .range_box {
+    padding: 40px 30px;
+  }
+  /*-----CannabisDelivery------*/
+  .CanDelivery_box {
+    padding: 30px 15px;
+  }
+  .CanDelivery_box::after {
+    height: 90%;
+    margin-bottom: 2%;
+  }
+  /*-----GreateTorontoArea------*/
+  .toron_right {
+    top: 20%;
+    right: -0%;
+  }
+  /*-----LowPrices------*/
+  .mushroom_img {
+    transform: scale(1);
+    padding-right: 10px;
+  }
+  /*-----PotentCannabis------*/
+  .space_panda {
+    left: 0%;
+    width: 100%;
+  }
+  .min_vh_space {
+    min-height: 390px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  :root {
+    --fs-xsm: 12px;
+    --fs-sm: 14px;
+    --fs-md: 13px;
+    --fs-lg: 15px;
+    --fs-xl: 16px;
+    --fs-xxl: 32px;
+    --fs-3xl: 35px;
+    --fs-4xl: 48px;
+    --fs-5xl: 40px;
+  }
+  .custom_w {
+    width: 30%;
+  }
+  .shop_img {
+    width: 120px;
+    height: 120px;
+  }
+  .box_1 {
+    width: 100%;
+    height: 120px;
+    top: 54%;
+  }
+  /*------AboutUs-------*/
+  .box_2 {
+    padding: 50px 50px;
+  }
+  /*-----OurRange------*/
+  .range_box {
+    padding: 50px 50px;
+  }
+  /*-----PotentCannabis------*/
+  .space_panda {
+    left: 10%;
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --fs-xsm: 12px;
+    --fs-sm: 14px;
+    --fs-md: 12px;
+    --fs-lg: 15px;
+    --fs-xl: 16px;
+    --fs-xxl: 32px;
+    --fs-3xl: 35px;
+    --fs-4xl: 30px;
+    --fs-5xl: 40px;
+  }
+  .box_1 {
+    width: 100%;
+    height: 300px;
+    bottom: 0%;
+  }
+  .search_input {
+    width: 130px !important;
+  }
+  .btn_search {
+    background-size: 15px !important;
+    height: 15px;
+    width: 15px;
+    padding-left: 15px;
+  }
+  .btn_1 {
+    padding: 10px 16px;
+  }
+  /*------AboutUs-------*/
+  .box_2 {
+    padding: 8px 16px;
+  }
+  /*-----OurRange------*/
+  .range_box {
+    padding: 50px 80px;
+  }
+  /*-----CannabisDelivery------*/
+  .CanDelivery_box::after {
+    height: 90%;
+    margin-bottom: 6%;
+  }
+  .CanDelivery_box {
+    padding: 30px 20px;
+  }
+  /*-----GreateTorontoArea------*/
+  .toron_left {
+    left: 28%;
+    bottom: 0%;
+  }
+  /*-----LowPrices------*/
+  .mushroom_blur {
+    width: 30%;
+    height: 300px;
+    top: 15%;
+    right: 30%;
+  }
+  /*-----PotentCannabis------*/
+  .space_panda {
+    left: 15%;
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  .btn_search {
+    background-size: 20px !important;
+    height: 20px;
+    width: 20px;
+    padding-left: 20px;
+  }
+  .search_input {
+    width: 177px !important;
+  }
+  .btn_1 {
+    padding: 12px 34px;
+  }
+  .shop_img {
+    width: 139px;
+    height: 139px;
+  }
+  /*------AboutUs-------*/
+  .box_2 {
+    padding: 30px 50px;
+  }
+  .box_2::after {
+    height: 85%;
+    margin-bottom: 10%;
+  }
+  /*-----OurRange------*/
+  .range_box {
+    padding: 55px 200px;
+  }
+  /*-----CannabisDelivery------*/
+  .CanDelivery_box::after {
+    height: 91%;
+    margin-bottom: 3%;
+  }
+  .CanDelivery_box {
+    padding: 30px 35px;
+  }
+  /*-----GreateTorontoArea------*/
+  .toron_left {
+    left: 30%;
+    bottom: 0%;
+  }
+  /*-----LowPrices------*/
+  .mushroom_blur {
+    width: 40%;
+    height: 150px;
+    top: 30%;
+    right: 35%;
+  }
+  /*-----ProductDelivery-----*/
+  .product_blur {
+    width: 40%;
+    height: 200px;
+    top: 10%;
+    right: 30%;
+  }
+  /*-----PotentCannabis------*/
+  .space_panda {
+    left: 25%;
+    width: auto;
+  }
+  .min_vh_space {
+    min-height: 390px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --fs-xsm: 12px;
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 20px;
+    --fs-xl: 24px;
+    --fs-xxl: 32px;
+    --fs-3xl: 35px;
+    --fs-4xl: 48px;
+    --fs-5xl: 80px;
+  }
+  .min_vh_100 {
+    min-height: 100vh;
+  }
+  .box_2 {
+    padding: 57px 65px;
+  }
+  .overflow_scroll {
+    overflow: hidden;
+  }
+  .box_1 {
+    width: 100%;
+    height: 300px;
+    top: 60% !important;
+  }
+  /*------AboutUs-------*/
+  .box_2::after {
+    height: 90%;
+    margin-bottom: 5%;
+  }
+  /*-----OurRange------*/
+  .range_box {
+    padding: 64px 200px;
+  }
+  /*-----CannabisDelivery------*/
+  .CanDelivery_box::after {
+    height: 91%;
+    margin-bottom: 4%;
+  }
+  /*-----GreateTorontoArea------*/
+  .toron_left {
+    left: 35%;
+    bottom: 0%;
+  }
+  /*-----PotentCannabis------*/
+  .space_panda {
+    left: 28%;
+    width: auto;
+  }
+  .min_vh_space {
+    min-height: 100vh;
+    background-image: url(./assets/image/png/Group\ 35136.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 1400px) {
+  .range_box {
+    padding: 64px 300px;
+  }
+  /*-----CannabisDelivery------*/
+  .CanDelivery_box::after {
+    height: 91%;
+    margin-bottom: 2%;
+  }
+  /*-----GreateTorontoArea------*/
+  .toron_left {
+    left: 38%;
+    bottom: 0%;
+  }
+  /*-----ProductDelivery-----*/
+  .product_blur {
+    width: 45%;
+    height: 250px;
+    top: 20%;
+    right: 30%;
+  }
+  /*-----PotentCannabis------*/
+  .space_panda {
+    left: 32%;
+    width: auto;
   }
 }
