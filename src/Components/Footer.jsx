@@ -10,15 +10,28 @@ const Footer = () => {
           <Row className="justify-content-center">
             <Col xs={12} lg={6}>
               <div className="d-flex flex-column align-items-center">
-                <a href="#" className="d-inline-block">
+                <a
+                  data-aos="zoom-in"
+                  data-aos-offset="200"
+                  data-aos-duration="1000"
+                  href="#"
+                  className="d-inline-block">
                   <img src={footer_panda} alt="footer_panda" />
                 </a>
-                <p className="ff_Montserrat fw-normal fs_md text-white text-center m-0 pt-3 lh-base">
+                <p
+                  data-aos="fade-right"
+                  data-aos-offset="200"
+                  data-aos-duration="1000"
+                  className="ff_Montserrat fw-normal fs_md text-white text-center m-0 pt-3 lh-base">
                   Tempor cras et scelerisque bibendum. Sapien proin pharetra
                   iaculis cras massa auctor turpis. Eget massa imperdiet sit
                   massa. Hac sit nec.
                 </p>
-                <ul className="d-flex align-items-center gap-4 my-4 p-0">
+                <ul
+                  data-aos="fade-left"
+                  data-aos-offset="200"
+                  data-aos-duration="1000"
+                  className="d-flex align-items-center gap-4 my-4 p-0">
                   <li>
                     <a
                       href="#"
@@ -47,7 +60,11 @@ const Footer = () => {
         </Container>
         <div className="copyright">
           <Container>
-            <p className="ff_Montserrat fw-normal fs_xsm text-white text-center m-0">
+            <p
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="ff_Montserrat fw-normal fs_xsm text-white text-center m-0">
               © copyright 2022 purplepanda
             </p>
           </Container>

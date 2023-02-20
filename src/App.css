@@ -679,7 +679,6 @@ body {
     width: 104px;
     height: 100px;
   }
-  /*------AboutUs-------*/
   .box_2 {
     padding: 20px 20px;
   }
@@ -687,7 +686,6 @@ body {
     height: 90%;
     margin-bottom: 4%;
   }
-  /*-----OurRange------*/
   .range_box {
     padding: 40px 30px;
   }
@@ -699,7 +697,6 @@ body {
     bottom: 0%;
     margin-bottom: 9%;
   }
-  /*-----CannabisDelivery------*/
   .CanDelivery_box {
     padding: 30px 15px;
   }
@@ -707,17 +704,14 @@ body {
     height: 90%;
     margin-bottom: 2%;
   }
-  /*-----GreateTorontoArea------*/
   .toron_right {
     top: 20%;
     right: -0%;
   }
-  /*-----LowPrices------*/
   .mushroom_img {
     transform: scale(1);
     padding-right: 10px;
   }
-  /*-----PotentCannabis------*/
   .space_panda {
     left: 0%;
     width: 100%;
@@ -761,15 +755,12 @@ body {
     width: 154px;
     height: 200px;
   }
-  /*------AboutUs-------*/
   .box_2 {
     padding: 50px 50px;
   }
-  /*-----OurRange------*/
   .range_box {
     padding: 50px 50px;
   }
-  /*-----PotentCannabis------*/
   .space_panda {
     left: 10%;
     width: 80%;
@@ -804,7 +795,6 @@ body {
   .btn_1 {
     padding: 10px 16px;
   }
-  /*------AboutUs-------*/
   .box_2 {
     padding: 8px 16px;
   }
@@ -813,11 +803,9 @@ body {
     bottom: 0%;
     margin-bottom: 5%;
   }
-  /*-----OurRange------*/
   .range_box {
     padding: 50px 80px;
   }
-  /*-----CannabisDelivery------*/
   .CanDelivery_box::after {
     height: 90%;
     margin-bottom: 6%;
@@ -825,19 +813,16 @@ body {
   .CanDelivery_box {
     padding: 30px 20px;
   }
-  /*-----GreateTorontoArea------*/
   .toron_left {
     left: 28%;
     bottom: 0%;
   }
-  /*-----LowPrices------*/
   .mushroom_blur {
     width: 30%;
     height: 300px;
     top: 15%;
     right: 30%;
   }
-  /*-----PotentCannabis------*/
   .space_panda {
     left: 15%;
     width: 70%;
@@ -872,7 +857,6 @@ body {
     width: 144px;
     height: 210px;
   }
-  /*------AboutUs-------*/
   .box_2 {
     padding: 30px 50px;
   }
@@ -880,11 +864,9 @@ body {
     height: 85%;
     margin-bottom: 10%;
   }
-  /*-----OurRange------*/
   .range_box {
     padding: 55px 200px;
   }
-  /*-----CannabisDelivery------*/
   .CanDelivery_box::after {
     height: 91%;
     margin-bottom: 3%;
@@ -897,26 +879,22 @@ body {
     bottom: 0%;
     margin-bottom: 3%;
   }
-  /*-----GreateTorontoArea------*/
   .toron_left {
     left: 30%;
     bottom: 0%;
   }
-  /*-----LowPrices------*/
   .mushroom_blur {
     width: 40%;
     height: 150px;
     top: 30%;
     right: 35%;
   }
-  /*-----ProductDelivery-----*/
   .product_blur {
     width: 40%;
     height: 200px;
     top: 10%;
     right: 30%;
   }
-  /*-----PotentCannabis------*/
   .space_panda {
     left: 25%;
     width: auto;
@@ -959,26 +937,21 @@ body {
     width: 164px;
     height: 200px;
   }
-  /*------AboutUs-------*/
   .box_2::after {
     height: 90%;
     margin-bottom: 5%;
   }
-  /*-----OurRange------*/
   .range_box {
     padding: 64px 200px;
   }
-  /*-----CannabisDelivery------*/
   .CanDelivery_box::after {
     height: 91%;
     margin-bottom: 4%;
   }
-  /*-----GreateTorontoArea------*/
   .toron_left {
     left: 35%;
     bottom: 0%;
   }
-  /*-----PotentCannabis------*/
   .space_panda {
     left: 28%;
     width: auto;
@@ -1004,26 +977,29 @@ body {
     width: 164px;
     height: 240px;
   }
-  /*-----CannabisDelivery------*/
   .CanDelivery_box::after {
     height: 91%;
     margin-bottom: 2%;
   }
-  /*-----GreateTorontoArea------*/
   .toron_left {
     left: 38%;
     bottom: 0%;
   }
-  /*-----ProductDelivery-----*/
   .product_blur {
     width: 45%;
     height: 250px;
     top: 20%;
     right: 30%;
   }
-  /*-----PotentCannabis------*/
   .space_panda {
     left: 32%;
     width: auto;
+  }
+  .custom_w {
+    width: 40%;
+  }
+  .shop_img {
+    width: 150px;
+    height: 150px;
   }
 }

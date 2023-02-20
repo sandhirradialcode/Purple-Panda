@@ -12,7 +12,12 @@ const AboutUs = () => {
       <section className="bg_cannabis">
         <Container className="py-5">
           <Row className="align-items-center flex-column-reverse flex-md-row py-5">
-            <Col className="mt-5 mt-md-0" md={6}>
+            <Col
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="mt-5 mt-md-0"
+              md={6}>
               <div className="box_2">
                 <h2 className="ff_Philosopher fw-normal fs_4xl m-0 text-white text-center text-md-start">
                   About
@@ -41,7 +46,12 @@ const AboutUs = () => {
                 </div>
               </div>
             </Col>
-            <Col className="mb-4 mb-md-0" md={6}>
+            <Col
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="mb-4 mb-md-0"
+              md={6}>
               <div className="d_grid">
                 <img
                   className="w-100 abu_grid_img1"

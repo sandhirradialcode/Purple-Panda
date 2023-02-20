@@ -8,15 +8,27 @@ const Freecontactus = () => {
     <>
       <section>
         <Container className="py-5">
-          <Row className=" flex-column-reverse flex-lg-row align-items-center">
-            <Col md={10} lg={6} xxl={7}>
+          <Row className=" justify-content-center">
+            <Col
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              md={10}
+              lg={6}
+              xxl={7}>
               <img
                 className="w-100"
                 src={cannabis_leaves}
                 alt="green_cannabis_leaves"
               />
             </Col>
-            <Col className="mt-5 mt-md-0" lg={6} xxl={5}>
+            <Col
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="mt-5 mt-md-0"
+              lg={6}
+              xxl={5}>
               <div className="contact_us_box">
                 <h2 className="ff_Philosopher fw-bold fs_xxl text-white text-center text-md-start">
                   Feel free to <span className="clr_gradient">contact us</span>{" "}
@@ -45,7 +57,7 @@ const Freecontactus = () => {
                     <Col md={6}>
                       <input type="text" placeholder="First name" />
                     </Col>
-                    <Col md={6}>
+                    <Col className="mt-3 mt-md-0" md={6}>
                       <input type="text" placeholder="Last name" />
                     </Col>
                     <Col className="mt-3" md={6}>

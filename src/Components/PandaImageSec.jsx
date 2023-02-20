@@ -9,7 +9,12 @@ const PandaImageSec = () => {
       <section className="panda_bg">
         <Container className="py-5">
           <Row className="py-5 justify-content-center">
-            <Col sm={6} lg={4}>
+            <Col
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              sm={6}
+              lg={4}>
               <img
                 className="w-100 panda_image"
                 src={panda_img1}
@@ -20,7 +25,13 @@ const PandaImageSec = () => {
                 Customers
               </h2>
             </Col>
-            <Col className="mt-5 mt-sm-0" sm={6} lg={4}>
+            <Col
+              data-aos="fade-down"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="mt-5 mt-sm-0"
+              sm={6}
+              lg={4}>
               <img
                 className="w-100 panda_image"
                 src={panda_img2}
@@ -31,7 +42,13 @@ const PandaImageSec = () => {
                 <span className="clr_gradient">Picks Of The week</span>
               </h2>
             </Col>
-            <Col className="mt-5 mt-lg-0" sm={6} lg={4}>
+            <Col
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="mt-5 mt-lg-0"
+              sm={6}
+              lg={4}>
               <img
                 className="w-100 panda_image"
                 src={panda_img3}

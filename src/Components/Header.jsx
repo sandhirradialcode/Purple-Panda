@@ -6,12 +6,17 @@ import panda_gif from "../assets/image/png/panda_gif.gif";
 const Header = () => {
   return (
     <>
-      <header className="bg_hero min_vh_100 d-flex flex-column position-relative">
+      <header className="bg_hero min_vh_100 d-flex flex-column position-relative overflow-hidden">
         <Navbar />
         <section className="d-flex flex-grow-1 align-items-center">
           <Container className="py-5">
             <Row className="align-items-center flex-column-reverse flex-md-row justify-content-between">
-              <Col className="mt-5 mt-md-0" md={6}>
+              <Col
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-duration="1000"
+                className="mt-5 mt-md-0 z_index2"
+                md={6}>
                 <h1 className="ff_Philosopher fw-bold fs_5xl m-0 text-white text-center text-md-start">
                   Setting a
                   <span className="ff_Philosopher clr_gradient"> ‘High’ </span>

@@ -16,7 +16,11 @@ const OurClassifications = () => {
             alt="toron_right"
           />
           <Row className="pt-5">
-            <Col md={6}>
+            <Col
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              md={6}>
               <div className="classification_box">
                 <h2 className="ff_Philosopher fw-semibold fs_4xl text-white m-0 text_border d-inline-block position-relative">
                   Our <span className="clr_gradient">Classifications</span>

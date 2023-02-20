@@ -7,10 +7,14 @@ import item_3 from "../assets/image/png/item_3.png";
 const PopularItems = () => {
   return (
     <>
-      <section className="popular_Items_bg position-relative">
+      <section className="popular_Items_bg position-relative overflow-hidden">
         <span className="blue_sec position-absolute top-0 start-0"></span>
         <Container className="py-5">
-          <Row className="justify-content-center pt-4">
+          <Row
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            className="justify-content-center pt-4">
             <Col md={5}>
               <h2 className="ff_Philosopher fw-bold fs_4xl text-white m-0 text-center">
                 Most <span className="clr_gradient">Popular</span> Items
@@ -22,7 +26,13 @@ const PopularItems = () => {
             </Col>
           </Row>
           <Row className="py-5 justify-content-center">
-            <Col sm={6} lg={4} xxl={3}>
+            <Col
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              sm={6}
+              lg={4}
+              xxl={3}>
               <div className="item_card">
                 <a href="#">
                   <img className="w-100" src={item_1} alt="item_1" />
@@ -42,7 +52,14 @@ const PopularItems = () => {
                 </div>
               </div>
             </Col>
-            <Col className="mt-4 mt-sm-0" sm={6} lg={4} xxl={3}>
+            <Col
+              data-aos="fade-down"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="mt-4 mt-sm-0"
+              sm={6}
+              lg={4}
+              xxl={3}>
               <div className="item_card">
                 <a href="#">
                   <img className="w-100" src={item_2} alt="item_2" />
@@ -62,7 +79,14 @@ const PopularItems = () => {
                 </div>
               </div>
             </Col>
-            <Col className="mt-4 mt-lg-0" sm={6} lg={4} xxl={3}>
+            <Col
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="mt-4 mt-lg-0"
+              sm={6}
+              lg={4}
+              xxl={3}>
               <div className="item_card">
                 <a href="#">
                   <img className="w-100" src={item_3} alt="item_3" />
@@ -82,7 +106,14 @@ const PopularItems = () => {
                 </div>
               </div>
             </Col>
-            <Col className="mt-4 mt-xxl-0" sm={6} lg={4} xxl={3}>
+            <Col
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="mt-4 mt-xxl-0"
+              sm={6}
+              lg={4}
+              xxl={3}>
               <div className="item_card">
                 <a href="#">
                   <img className="w-100" src={item_3} alt="item_3" />

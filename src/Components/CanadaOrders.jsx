@@ -9,13 +9,18 @@ const CanadaOrders = () => {
     <>
       <section className="bg_img_mailorder position-relative">
         <span className="order_liner position-absolute end-0"></span>
+        <span className="blue_sec position-absolute bottom-0 end-0"></span>
         <img
           className="position-absolute end-0 top-0"
           src={Rectangle_30}
           alt="Rectangle_30"
         />
         <Container className="py-5">
-          <Row className="justify-content-center pb-5">
+          <Row
+            data-aos="fade-down"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            className="justify-content-center pb-5">
             <Col md={10} lg={9}>
               <h2 className="ff_Philosopher fw-bold fs_4xl text-white m-0 text-center">
                 Canada Wide
@@ -30,8 +35,14 @@ const CanadaOrders = () => {
               </p>
             </Col>
           </Row>
-          <Row className="my-5 justify-content-center">
-            <Col className="mb-5 mb-lg-0" md={6} lg={4}>
+          <Row className="my-5 justify-content-center z_index2">
+            <Col
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="mb-5 mb-lg-0"
+              md={6}
+              lg={4}>
               <div className="card_1 d-flex flex-column align-items-center position-relative">
                 <div className="dark_blue_round">
                   <span className="ff_Montserrat white_round d-flex flex-column align-items-center fw-semibold fs_3xl clr_purple">
@@ -48,7 +59,13 @@ const CanadaOrders = () => {
                 <span className="card1_blur position-absolute bottom-0 start-0"></span>
               </div>
             </Col>
-            <Col className=" mt-5 mt-md-0 mb-5 mb-lg-0" md={6} lg={4}>
+            <Col
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className=" mt-5 mt-md-0 mb-5 mb-lg-0"
+              md={6}
+              lg={4}>
               <div className="card_1 d-flex flex-column align-items-center position-relative">
                 <div className="dark_blue_round">
                   <span className="ff_Montserrat white_round d-flex flex-column align-items-center fw-semibold fs_3xl clr_purple">
@@ -65,7 +82,13 @@ const CanadaOrders = () => {
                 <span className="card1_blur position-absolute bottom-0 start-0"></span>
               </div>
             </Col>
-            <Col className="mt-5 mt-lg-0" md={6} lg={4}>
+            <Col
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="mt-5 mt-lg-0"
+              md={6}
+              lg={4}>
               <div className="card_1 d-flex flex-column align-items-center position-relative">
                 <div className="dark_blue_round">
                   <span className="ff_Montserrat white_round d-flex flex-column align-items-center fw-semibold fs_3xl clr_purple">

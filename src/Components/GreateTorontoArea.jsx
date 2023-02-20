@@ -6,7 +6,7 @@ import toron_right from "../assets/image/png/toron_right.png";
 const GreateTorontoArea = () => {
   return (
     <>
-      <section>
+      <section className=" overflow-hidden">
         <Container className="py-5 ">
           <Row className="justify-content-center flex-column align-items-center">
             <Col md={5}>
@@ -17,12 +17,20 @@ const GreateTorontoArea = () => {
               </h2>
             </Col>
           </Row>
-          <p className="ff_Montserrat fw-normal fs_md text-white m-0 opacity_07 text-center pt-3">
+          <p
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            className="ff_Montserrat fw-normal fs_md text-white m-0 opacity_07 text-center pt-3">
             If you’re in any of these cities and need a little pick me up, you
             know where to go!
           </p>
           <Row className="mt-5 position-relative">
-            <Col md={6}>
+            <Col
+              data-aos="flip-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              md={6}>
               <div className="TorontoArea_box1 d-flex justify-content-center">
                 <div>
                   <div className="my-3 d-flex align-items-center gap-4">
@@ -52,7 +60,12 @@ const GreateTorontoArea = () => {
                 </div>
               </div>
             </Col>
-            <Col className="mt-4 mt-md-0 " md={6}>
+            <Col
+              data-aos="flip-left"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="mt-4 mt-md-0 "
+              md={6}>
               <div className="TorontoArea_box1 d-flex justify-content-center">
                 <div>
                   <div className="my-3 d-flex align-items-center gap-4">

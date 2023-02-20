@@ -9,9 +9,13 @@ import Cannabis_grid_img5 from "../assets/image/png/Cannabis_grid_img5.png";
 const Cannabis = () => {
   return (
     <>
-      <section className="cannabis_bg_img">
+      <section className="cannabis_bg_img overflow-hidden">
         <Container className="pt-5">
-          <Row className=" justify-content-center">
+          <Row
+            data-aos="fade-down"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            className=" justify-content-center">
             <Col md={10} lg={8}>
               <h2 className="ff_Philosopher fw-bold fs_4xl text-white m-0 text-center">
                 Cannabis
@@ -26,7 +30,12 @@ const Cannabis = () => {
             </Col>
           </Row>
           <Row className="align-items-center flex-column-reverse flex-md-row py-5">
-            <Col className="mt-5 mt-md-0" md={7}>
+            <Col
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="mt-5 mt-md-0"
+              md={7}>
               <div className="box_3 pe-3">
                 <h2 className="ff_Montserrat fw-semibold fs_xxl m-0 text-white text-center text-md-start">
                   Strain <span className="clr_gradient">Families</span>
@@ -65,7 +74,12 @@ const Cannabis = () => {
                 </div>
               </div>
             </Col>
-            <Col className="mb-4 mb-md-0" md={5}>
+            <Col
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              className="mb-4 mb-md-0"
+              md={5}>
               <div className="d_grid">
                 <img
                   className="w-100 abu_grid_img1"

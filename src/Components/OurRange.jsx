@@ -7,7 +7,11 @@ const OurRange = () => {
   return (
     <>
       <section className="py-5">
-        <Container className="position-relative">
+        <Container
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          className="position-relative">
           <div>
             <img
               className=" position-absolute bottom-0 start-0 z_index_1"

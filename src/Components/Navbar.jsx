@@ -15,19 +15,19 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav className="top_nav py-3 d-none d-md-flex">
+      <nav className="top_nav py-3">
         <Container>
           <div className="d-flex justify-content-center align-items-center">
             <a href="#" className="d-inline-block">
               <img src={mdi_gift} alt="mdi_gift" />
             </a>
-            <p className="ff_Montserrat fw-light fs_md text-white m-0 text-center ps-3">
+            <p className="ff_Montserrat fw-light fs_md text-white m-0 text-center ps-1 ps-sm-3">
               <span className="fw-bolder">Black Friday</span>
               savings are here ,save up to 10% off on coupon code
             </p>
             <a
               href="#"
-              className="ff_Montserra fw-bolder fs_md clr_gradient ms-3 d-inline-block">
+              className="ff_Montserra fw-bolder fs_md clr_gradient ms-1 ms-sm-3 d-inline-block">
               Shop Now
             </a>
           </div>

@@ -8,11 +8,19 @@ const LatestBlogs = () => {
     <>
       <section className="blog_bg_img">
         <Container className="py-5">
-          <h2 className="ff_Philosopher fw-bold fs_4xl text-white m-0 text-center">
+          <h2
+            data-aos="fade-down"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            className="ff_Philosopher fw-bold fs_4xl text-white m-0 text-center">
             Latest <span className="clr_gradient">Blogs</span> And{" "}
             <span className="clr_gradient">News</span>
           </h2>
-          <Row className="py-5 justify-content-center">
+          <Row
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            className="py-5 justify-content-center">
             <Col sm={6} lg={4}>
               <div className="blog_card">
                 <img className="w-100" src={blog_img1} alt="blog_img1" />

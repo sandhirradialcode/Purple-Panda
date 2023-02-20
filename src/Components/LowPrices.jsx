@@ -5,11 +5,19 @@ import mushroom from "../assets/image/png/mushroom.png";
 const LowPrices = () => {
   return (
     <>
-      <section>
+      <section className="position-relative overflow-hidden">
+        <span className="blue_sec position-absolute top-0 start-0 z_index_1"></span>
         <Container className="py-5">
           <div className="low_prices_box py-5 py-md-0">
             <Row className=" flex-column-reverse flex-md-row justify-content-between align-items-center">
-              <Col className="mt-5 mt-md-0" sm={9} md={6} lg={7}>
+              <Col
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-duration="1000"
+                className="mt-5 mt-md-0"
+                sm={9}
+                md={6}
+                lg={7}>
                 <div className="px-3 px-lg-5">
                   <h2 className="ff_Philosopher fw-bold fs_4xl text-white m-0 text-center text-md-start">
                     High <span className="clr_gradient">Thoughts</span>, Low{" "}
@@ -29,7 +37,14 @@ const LowPrices = () => {
                   </div>
                 </div>
               </Col>
-              <Col sm={9} md={6} lg={5} xxl={4}>
+              <Col
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-duration="1000"
+                sm={9}
+                md={6}
+                lg={5}
+                xxl={4}>
                 <div className="mushroom_img position-relative">
                   <img className="w-100" src={mushroom} alt="mushroom" />
                   <span className="mushroom_blur position-absolute"></span>

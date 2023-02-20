@@ -6,10 +6,18 @@ const PotentCannabis = () => {
     <>
       <section>
         <Container className="py-5">
-          <h2 className="ff_Philosopher fw-bold fs_4xl text-white text-center m-0">
+          <h2
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            className="ff_Philosopher fw-bold fs_4xl text-white text-center m-0">
             Potent Cannabis <span className="clr_gradient">Alert</span>
           </h2>
-          <p className="ff_Montserrat fw-normal fs_md text-white m-0 text-center pt-2">
+          <p
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            className="ff_Montserrat fw-normal fs_md text-white m-0 text-center pt-2">
             click here to try our most potent hand picked craft cannabis
           </p>
         </Container>
