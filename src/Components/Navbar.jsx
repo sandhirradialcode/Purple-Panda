@@ -45,7 +45,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/"
-                  className="ff_Montserrat fw-normel fs_md text-white nav_links">
+                  className="ff_Montserrat fw-normel fs_md text-white nav_links d-inline-block">
                   HOME
                 </Link>
               </li>
@@ -66,7 +66,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/ContactPage"
-                  className="ff_Montserrat fw-normel fs_md text-white nav_links">
+                  className="ff_Montserrat fw-normel fs_md text-white nav_links d-inline-block">
                   CONTACT
                 </Link>
               </li>
@@ -118,7 +118,7 @@ const Navbar = () => {
             <li onClick={() => setopenNav(true)}>
               <Link
                 to="/"
-                className="ff_Montserrat fw-normel fs_md text-white nav_links">
+                className="ff_Montserrat fw-normel fs_md text-white nav_links d-inline-block">
                 HOME
               </Link>
             </li>
@@ -139,7 +139,7 @@ const Navbar = () => {
             <li onClick={() => setopenNav(true)}>
               <Link
                 to="/ContactPage"
-                className="ff_Montserrat fw-normel fs_md text-white nav_links">
+                className="ff_Montserrat fw-normel fs_md text-white nav_links d-inline-block">
                 CONTACT
               </Link>
             </li>

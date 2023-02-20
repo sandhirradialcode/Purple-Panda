@@ -972,8 +972,8 @@ body {
     padding: 64px 300px;
   }
   .gif {
-    top: 20%;
-    right: 31%;
+    top: 23%;
+    right: 32%;
     width: 164px;
     height: 240px;
   }
@@ -1001,5 +1001,12 @@ body {
   .shop_img {
     width: 150px;
     height: 150px;
+  }
+}
+@media (min-width: 1900px) {
+  .box_1 {
+    width: 100%;
+    height: 400px;
+    top: 55% !important;
   }
 }

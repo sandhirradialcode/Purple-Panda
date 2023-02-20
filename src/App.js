@@ -7,12 +7,14 @@ import BackToTop from "./Components/BackToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+
 function App() {
   useEffect(() => {
     AOS.init({
       once: true,
     });
   }, []);
+
   return (
     <>
       <Routes>

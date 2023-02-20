@@ -11,7 +11,7 @@ import Bulk_Orders from "../assets/image/png/Bulk_Orders.png";
 const Shop = () => {
   return (
     <>
-      <section className="bg_dark_blue position-relative overflow-hidden">
+      <section className="bg_dark_blue position-relative">
         <span className="blue_sec position-absolute bottom-0 start-0"></span>
         <Container className="py-5">
           <div
