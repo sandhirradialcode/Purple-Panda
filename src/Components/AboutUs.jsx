@@ -9,7 +9,7 @@ import about_img5 from "../assets/image/png/about_img5.png";
 const AboutUs = () => {
   return (
     <>
-      <section className="bg_cannabis">
+      <section id="ABOUT" className="bg_cannabis">
         <Container className="py-5">
           <Row className="align-items-center flex-column-reverse flex-md-row py-5">
             <Col

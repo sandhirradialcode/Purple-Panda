@@ -51,14 +51,14 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#SHOP"
                   className="ff_Montserrat fw-normel fs_md text-white nav_links d-inline-block">
                   SHOP
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#ABOUT"
                   className="ff_Montserrat fw-normel fs_md text-white nav_links d-inline-block">
                   ABOUT
                 </a>
@@ -124,14 +124,14 @@ const Navbar = () => {
             </li>
             <li onClick={() => setopenNav(true)}>
               <a
-                href="#"
+                href="#SHOP"
                 className="ff_Montserrat fw-normel fs_md text-white nav_links d-inline-block">
                 SHOP
               </a>
             </li>
             <li onClick={() => setopenNav(true)}>
               <a
-                href="#"
+                href="#ABOUT"
                 className="ff_Montserrat fw-normel fs_md text-white nav_links d-inline-block">
                 ABOUT
               </a>
